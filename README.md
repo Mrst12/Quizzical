@@ -13,6 +13,13 @@
 - ### Images
 
 #### Wireframes
+
+[Desktop wireframe](./assets.wireframes/quizzical-desktop.png)
+
+[Tablet wireframe](./assets.wireframes/quizzical-tablet.png)
+
+[Mobile wireframe](./assets.wireframes/quizzical-mobile.png)
+
 ## Features
 ## Technologies Used
 ### Languages
