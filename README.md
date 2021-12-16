@@ -14,6 +14,9 @@
 - ### Design
     - #### Colour scheme
 
+    - #### Typography
+        - I have used **Merriweather** for the font style with a backup of sans-serif should it not be accessible for all.
+
 - ### Images
 
 #### Wireframes
@@ -37,6 +40,7 @@
         - For version control, commiting, and pushing to Github
     - Github
         - For storing the repository, files, and images pushed from Gitpod
+    
 
 ## Testing
 
