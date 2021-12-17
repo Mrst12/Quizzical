@@ -6,6 +6,8 @@ body {
   text-align: center;
 }
 
+/*heading and logo*/
+
 .heading {
   font-size: 2.5em;
 }
@@ -14,6 +16,7 @@ body {
   padding-right: 5px;
 }
 
+/*main game area*/
 .game-area {
   background-color: #B8E4F0;
   box-sizing: border-box;
@@ -38,11 +41,7 @@ body {
   border: 1px solid blue;
 }
 
-.score-area {
-  margin: 5px auto;
-  width: 60%;
-  font-size: 1.2rem;
-}
+/*scoring area*/
 
 #score {
   color: green;
@@ -53,11 +52,18 @@ body {
   color: red;
   font-weight: bold;
 }
+.score-area {
+  margin: 5px auto;
+  width: 60%;
+  font-size: 1.2rem;
+}
 
 .scores {
   display: inline-block;
   padding: 25px;
 }
+
+/*answer section*/
 
 .answer-choice {
   display: flex;
@@ -77,4 +83,18 @@ button {
 
 button:hover {
   background-color: #98BAE7;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 816px) {
+  .scores {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .scores {
+    padding: 0;
+  }
 }
