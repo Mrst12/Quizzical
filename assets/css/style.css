@@ -1,8 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
-  
+body {
+  font-family: "Merriweather", sans-serif;
+  background-color: white;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5em;
+}
+
+.logo {
+  padding-right: 5px;
+}
+
+.game-area {
+  background-color: #B8E4F0;
+  box-sizing: border-box;
+  width: 85%;
+  height: 65vh;
+  max-height: 450px;
+  max-width: 830px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.question-area {
+  width: 70%;
+  font-size: 2rem;
+  margin: auto;
+  margin-top: 20px;
+  padding: 50px 0;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid blue;
+}
+
+.score-area {
+  margin: 5px auto;
+  width: 60%;
+  font-size: 1.2rem;
+}
+
+#score {
+  color: green;
+  font-weight: bold;
+}
+
+#incorrect {
+  color: red;
+  font-weight: bold;
+}
+
+.scores {
+  display: inline-block;
+  padding: 25px;
+}
+
+.answer-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+button {
+  margin: 10px;
+  width:40%;
+  border-radius: 10px;
+  border: 1px solid blue;
+  padding: 10px;
+  background-color: white;
+}
+
+button:hover {
+  background-color: #98BAE7;
+}
