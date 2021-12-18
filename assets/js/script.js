@@ -397,7 +397,7 @@ const questions = [
             C: "Seat",
             D: "Nissan",
         },
-        correctAnswer: ""
+        correctAnswer: "A"
     },
 ];
 
