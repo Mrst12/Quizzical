@@ -30,6 +30,7 @@
         - I have used **Merriweather** for the font style with a backup of sans-serif should it not be accessible for all.
 
 - ### Images
+    - The image used for the logo was taken from clipart (acknowledged in credits)
 
 #### Wireframes
 
@@ -66,5 +67,6 @@
 ### Forking the repository
 ### Cloning the repository
 ## Credits
+- [logo image](https://www.pinclipart.com/)
 ### Code
 ### Acknowledgements:
