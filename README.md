@@ -13,6 +13,18 @@
 
 - ### Design
     - #### Colour scheme
+        - used for background colour
+![B8E4F0](./assets/design/background-colour.png)
+
+        - used for hover effect on buttons
+![98BAE7](./assets/design/button-colour.png)
+
+    - black was used for text
+    - white was used for body background
+    - blue was used for border colour
+    - green was used for the text colour of correct answers
+    - red was used for the text colour of incorrect answers
+
 
     - #### Typography
         - I have used **Merriweather** for the font style with a backup of sans-serif should it not be accessible for all.
