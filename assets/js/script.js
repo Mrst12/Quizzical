@@ -1,18 +1,24 @@
-runGame() {
+//variables
+const letsStart = document.getElementById('start-btn');
+
+//event listeners
+letsStart.addEventListener('click', runGame);
+
+ function runGame() {
+    console.log("This game is starting");
+}
+function getNextQuestion() {
 
 }
-getNextQuestion() {
+ function checkAnswer() {
 
 }
-checkAnswer() {
+ function incrementScore() {
 
 }
-incrementScore() {
+ function incrementWrongAnswer() {
 
 }
-incrementWrongAnswer() {
-
-}
-resetState() {
+function resetState() {
 
 }
