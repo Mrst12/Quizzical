@@ -22,7 +22,7 @@ body {
   box-sizing: border-box;
   width: 85%;
   /*height: 65vh;*/
-  max-height: 450px;
+  max-height: 600px;
   max-width: 830px;
   margin-left: auto;
   margin-right: auto;
@@ -65,7 +65,7 @@ body {
 
 /*answer section*/
 
-.answer-choice {
+#answer-choice {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,10 +79,15 @@ button {
   border: 1px solid blue;
   padding: 10px;
   background-color: white;
+  font-size: 1.5rem;
 }
 
 button:hover {
   background-color: #98BAE7;
+}
+
+.hide {
+  display: none;
 }
 
 /*media queries*/
