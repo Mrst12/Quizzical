@@ -30,7 +30,7 @@ body {
   border-radius: 10px;
 }
 
-.question-area {
+#questions-cont {
   width: 70%;
   font-size: 2rem;
   margin: auto;

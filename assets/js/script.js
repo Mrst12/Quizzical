@@ -1,13 +1,24 @@
 //variables
 const letsStart = document.getElementById('start-btn');
+const questionCont = document.getElementById('questions-cont');
+let shuffledQuestions, currentQuestionIndex;
+const questionArea = document.getElementById('questions');
+const answersArea = document.getElementById('answer-choice');
 
 //event listeners
 letsStart.addEventListener('click', runGame);
 
  function runGame() {
-    console.log("This game is starting");
+    letsStart.classList.add('hide');
+    questionCont.classList.remove('hide');
+    getNextQuestion();
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    currentQuestionIndex = 0;
 }
 function getNextQuestion() {
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
+}
+function displayQuestion(question) {
 
 }
  function checkAnswer() {
