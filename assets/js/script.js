@@ -8,6 +8,10 @@ const answersArea = document.getElementById('answer-choice');
 
 //event listeners
 letsStart.addEventListener('click', runGame);
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++;
+    getNextQuestion();
+})
 
  function runGame() {
     letsStart.classList.add('hide');
@@ -40,6 +44,13 @@ function displayQuestion(question) {
     Array.from(answersArea.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     })
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+        nextButton.classList.remove('hide');
+    } else {
+        letsStart.innerText = 'Restart'
+        letsStart.classList.remove('hide');
+    }
+    
 }
 
 function setStatusClass(element, correct) {
