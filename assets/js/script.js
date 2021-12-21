@@ -23,6 +23,8 @@ nextButton.addEventListener('click', () => {
 function getNextQuestion() {
     defaultState();
     displayQuestion(shuffledQuestions[currentQuestionIndex]);
+    
+
 }
 function displayQuestion(question) {
     questionArea.innerText = question.question;
@@ -36,6 +38,9 @@ function displayQuestion(question) {
         button.addEventListener('click', checkAnswer);
         answersArea.appendChild(button);
     })
+    
+    
+        
 }
  function checkAnswer(event) {
     const clickedButton = event.target;
@@ -50,6 +55,12 @@ function displayQuestion(question) {
         letsStart.innerText = 'Restart'
         letsStart.classList.remove('hide');
     }
+    if (correct) {
+        incrementScore();
+    } else {
+        incrementWrongAnswer();
+    }
+    
     
 }
 
@@ -68,10 +79,12 @@ function clearStatusClass(element) {
 }
 
  function incrementScore() {
-
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
 }
  function incrementWrongAnswer() {
-
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldScore;
 }
 function defaultState() {
     nextButton.classList.add('hide');
