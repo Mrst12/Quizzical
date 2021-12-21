@@ -34,8 +34,28 @@ function displayQuestion(question) {
     })
 }
  function checkAnswer(event) {
-
+    const clickedButton = event.target;
+    const correct = clickedButton.dataset.correct;
+    setStatusClass(document.body, correct);
+    Array.from(answersArea.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct);
+    })
 }
+
+function setStatusClass(element, correct) {
+    clearStatusClass(element);
+    if (correct) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
+    }
+}
+
+function clearStatusClass(element) {
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
+}
+
  function incrementScore() {
 
 }
@@ -45,8 +65,7 @@ function displayQuestion(question) {
 function defaultState() {
     nextButton.classList.add('hide');
     while (answersArea.firstChild) {
-        answersArea.removeChild;
-        (answersArea.firstChild);
+        answersArea.removeChild(answersArea.firstChild);
     }
 
 }

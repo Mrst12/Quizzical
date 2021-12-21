@@ -86,6 +86,12 @@ button:hover {
   background-color: #98BAE7;
 }
 
+.btn.correct {
+  background-color: green;
+}
+.btn.wrong {
+  background-color: red;
+}
 .hide {
   display: none;
 }
