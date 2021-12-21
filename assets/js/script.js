@@ -53,8 +53,7 @@ function displayQuestion(question) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
-        letsStart.innerText = 'Restart'
-        letsStart.classList.remove('hide');
+        questionArea.innerHTML = "congratulations on completing the quiz!"
     }
     if (correct) {
         incrementScore();
@@ -93,4 +92,7 @@ function defaultState() {
     }
 
 }
+function results() {
+    
 
+}
