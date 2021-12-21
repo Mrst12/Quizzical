@@ -15,10 +15,11 @@ nextButton.addEventListener('click', () => {
 
  function runGame() {
     letsStart.classList.add('hide');
-    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    shuffledQuestions = questions.sort(() => .5 - Math.random()).slice(0, 10);
     currentQuestionIndex = 0;
     questionCont.classList.remove('hide');
     getNextQuestion();
+    
 }
 function getNextQuestion() {
     defaultState();
@@ -60,8 +61,7 @@ function displayQuestion(question) {
     } else {
         incrementWrongAnswer();
     }
-    
-    
+
 }
 
 function setStatusClass(element, correct) {
@@ -93,3 +93,4 @@ function defaultState() {
     }
 
 }
+
