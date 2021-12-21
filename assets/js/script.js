@@ -10,16 +10,16 @@ letsStart.addEventListener('click', runGame);
 
  function runGame() {
     letsStart.classList.add('hide');
-    questionCont.classList.remove('hide');
-    getNextQuestion();
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
+    questionCont.classList.remove('hide');
+    getNextQuestion();
 }
 function getNextQuestion() {
-    showQuestion(shuffledQuestions[currentQuestionIndex]);
+    displayQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 function displayQuestion(question) {
-
+    questionArea.innerText = question.question;
 }
  function checkAnswer() {
 
