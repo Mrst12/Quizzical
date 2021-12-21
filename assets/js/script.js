@@ -1,5 +1,6 @@
 //variables
 const letsStart = document.getElementById('start-btn');
+const nextButton = document.getElementById('next-btn');
 const questionCont = document.getElementById('questions-cont');
 let shuffledQuestions, currentQuestionIndex;
 const questionArea = document.getElementById('questions');
@@ -16,12 +17,23 @@ letsStart.addEventListener('click', runGame);
     getNextQuestion();
 }
 function getNextQuestion() {
+    defaultState();
     displayQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 function displayQuestion(question) {
     questionArea.innerText = question.question;
+    question.answers.forEach(answer => {
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('btn');
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener('click', checkAnswer);
+        answersArea.appendChild(button);
+    })
 }
- function checkAnswer() {
+ function checkAnswer(event) {
 
 }
  function incrementScore() {
@@ -30,6 +42,11 @@ function displayQuestion(question) {
  function incrementWrongAnswer() {
 
 }
-function resetState() {
+function defaultState() {
+    nextButton.classList.add('hide');
+    while (answersArea.firstChild) {
+        answersArea.removeChild;
+        (answersArea.firstChild);
+    }
 
 }
