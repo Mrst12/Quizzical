@@ -53,7 +53,10 @@ function displayQuestion(question) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
-        questionArea.innerHTML = "congratulations on completing the quiz!"
+        questionArea.innerHTML = "congratulations on completing the quiz!";
+        letsStart.innerText = "Restart";
+        letsStart.classList.remove('hide');
+        restart();
     }
     if (correct) {
         incrementScore();
@@ -92,7 +95,9 @@ function defaultState() {
     }
 
 }
-function results() {
+function restart() {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = 0;
     
 
 }
