@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
+*, *::before, ::after {
+  box-sizing: border-box;
+  font-family: 'Merriweather';
+}
+
 body {
   font-family: "Merriweather", sans-serif;
   background-color: white;
@@ -100,7 +105,6 @@ button:hover {
 #results-cont {
   font-size: 1rem;
   text-align: center;
-  position: absolute;
   display: none;
 }
 
