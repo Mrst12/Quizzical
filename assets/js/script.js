@@ -35,8 +35,14 @@ restartButton.onclick = function() {
     document.getElementById('score').innerText = currentScore;
     document.getElementById('incorrect').innerText = currentIncorrectScore;
 
-}
+};
 
+//Quiz game
+
+/**
+ * hides the start button, shuffles the questions amd adds 10
+ * moves onto the first question
+ */
  function runGame() {
     letsStart.classList.add('hide');
     shuffledQuestions = questions.sort(() => .5 - Math.random()).slice(0, 10);
@@ -45,12 +51,21 @@ restartButton.onclick = function() {
     getNextQuestion();
     
 }
+
+/**
+ * resets and shuffles questions
+ */
 function getNextQuestion() {
     defaultState();
     displayQuestion(shuffledQuestions[currentQuestionIndex]);
     
 
 }
+
+/**
+ * Gets the questions and answers from the array
+ * and displays them
+ */
 function displayQuestion(question) {
     questionArea.innerText = question.question;
     question.answers.forEach(answer => {
@@ -62,7 +77,7 @@ function displayQuestion(question) {
         }
         button.addEventListener('click', checkAnswer);
         answersArea.appendChild(button);
-    })
+    });
     
     
         
