@@ -6,16 +6,36 @@ const questionArea = document.getElementById('questions');
 const answersArea = document.getElementById('answer-choice');
 const resultsButton = document.getElementById('results-btn');
 const restartButton = document.getElementById('restart-btn');
+const resultCont = document.getElementById('results-cont');
 
 let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
+let currentScore = 0;
+let currentIncorrectScore = 0;
 
 //event listeners
 letsStart.addEventListener('click', runGame);
+
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
     getNextQuestion();
 })
+
+resultsButton.onclick = function() {
+    resultCont.style.display = "block";
+};
+
+restartButton.onclick = function() {
+    resultCont.style.display = 'none';
+    questionCont.classList.add('hide');
+    resultsButton.classList.add('hide');
+    letsStart.classList.remove('hide');
+    currentScore = 0;
+    currentIncorrectScore = 0;
+    document.getElementById('score').innerText = currentScore;
+    document.getElementById('incorrect').innerText = currentIncorrectScore;
+
+}
 
  function runGame() {
     letsStart.classList.add('hide');
