@@ -78,10 +78,18 @@ function displayQuestion(question) {
         button.addEventListener('click', checkAnswer);
         answersArea.appendChild(button);
     });
-    
-    
-        
 }
+
+/**
+ * takes out the old answers so new ones can go in
+ */
+function defaultState() {
+    nextButton.classList.add('hide');
+    while (answersArea.firstChild) {
+        answersArea.removeChild(answersArea.firstChild);
+    }
+}
+
  function checkAnswer(event) {
     const clickedButton = event.target;
     const correct = clickedButton.dataset.correct;
@@ -127,13 +135,7 @@ function clearStatusClass(element) {
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
 }
-function defaultState() {
-    nextButton.classList.add('hide');
-    while (answersArea.firstChild) {
-        answersArea.removeChild(answersArea.firstChild);
-    }
 
-}
 function restart() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = 0;
