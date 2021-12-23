@@ -2,9 +2,13 @@
 const letsStart = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const questionCont = document.getElementById('questions-cont');
-let shuffledQuestions, currentQuestionIndex;
 const questionArea = document.getElementById('questions');
 const answersArea = document.getElementById('answer-choice');
+const resultsButton = document.getElementById('results-btn');
+const restartButton = document.getElementById('restart-btn');
+
+let shuffledQuestions; //hold the questions that are random
+let currentQuestionIndex; //index for the current question
 
 //event listeners
 letsStart.addEventListener('click', runGame);
