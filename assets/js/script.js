@@ -7,7 +7,7 @@ const answersArea = document.getElementById('answer-choice');
 const resultsButton = document.getElementById('results-btn');
 const restartButton = document.getElementById('restart-btn');
 const resultCont = document.getElementById('results-cont');
-
+const gameArea = document.getElementsByClassName('game-area');
 let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
 let currentScore = 0;
@@ -90,6 +90,10 @@ function defaultState() {
     }
 }
 
+/**checks user answer and increments score if correct
+ * increments incorrect score if wrong
+ * highlights colours for right and wrong buttons
+ */
  function checkAnswer(event) {
     const clickedButton = event.target;
     const correct = clickedButton.dataset.correct;
@@ -100,17 +104,18 @@ function defaultState() {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
-        questionArea.innerHTML = "congratulations on completing the quiz!";
-        letsStart.innerText = "Restart";
-        letsStart.classList.remove('hide');
-        restart();
+        displayResults();
     }
     if (correct) {
         incrementScore();
     } else {
         incrementWrongAnswer();
     }
+}
 
+function displayResults() {
+    document.getElementById('result-text')
+    resultsButton.classList.remove('hide');
 }
 
 function setStatusClass(element, correct) {
@@ -134,11 +139,4 @@ function clearStatusClass(element) {
  function incrementWrongAnswer() {
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
-}
-
-function restart() {
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = 0;
-    
-
 }
