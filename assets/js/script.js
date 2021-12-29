@@ -8,7 +8,6 @@ const nextButton = document.getElementById('next-btn');
 const questionCont = document.getElementById('questions-cont');
 const questionArea = document.getElementById('questions');
 const answersArea = document.getElementById('answer-choice');
-const resultsButton = document.getElementById('results-btn');
 const restartButton = document.getElementById('restart-btn');
 const resultCont = document.getElementById('results-cont');
 const gameArea = document.getElementsByClassName('game-area');
@@ -115,18 +114,12 @@ function defaultState() {
         5-10 : Fantastic job if you want to increase your knowledge refresh the page to try again!
         `
         restartButton.classList.remove('hide');
-
     }
     if (correct) {
         incrementScore();
     } else {
         incrementWrongAnswer();
     }
-}
-
-function displayResults() {
-    document.getElementById('result-text')
-    resultsButton.classList.remove('hide');
 }
 
 function setStatusClass(element, correct) {
