@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('questions').innerText = 'Welcome to Quizzical, please click start to continue'
+})
+
 //variables
 const letsStart = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
