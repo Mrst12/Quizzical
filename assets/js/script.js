@@ -30,7 +30,7 @@ resultsButton.onclick = function() {
 };
 
 restartButton.onclick = function() {
-    resultCont.style.display = 'none';
+    restartButton.classList.add('hide');
     questionCont.classList.add('hide');
     resultsButton.classList.add('hide');
     letsStart.classList.remove('hide');
@@ -38,7 +38,7 @@ restartButton.onclick = function() {
     currentIncorrectScore = 0;
     document.getElementById('score').innerText = currentScore;
     document.getElementById('incorrect').innerText = currentIncorrectScore;
-
+    runGame();
 };
 
 //Quiz game
@@ -108,7 +108,14 @@ function defaultState() {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
-        displayResults();
+        document.getElementById('questions').innerHTML = `
+        <h2>Check out your results</h2>
+        0-5 : Good try why not refresh the page and try again!
+        <br>
+        5-10 : Fantastic job if you want to increase your knowledge refresh the page to try again!
+        `
+        restartButton.classList.remove('hide');
+
     }
     if (correct) {
         incrementScore();
