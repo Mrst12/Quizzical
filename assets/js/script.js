@@ -11,6 +11,7 @@ const answersArea = document.getElementById('answer-choice');
 const restartButton = document.getElementById('restart-btn');
 const resultCont = document.getElementById('results-cont');
 const gameArea = document.getElementsByClassName('game-area');
+const heading = document.getElementsByTagName('h1');
 let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
 let currentScore = 0;
@@ -42,6 +43,7 @@ restartButton.onclick = function() {
  * moves onto the first question
  */
  function runGame() {
+    
     letsStart.classList.add('hide');
     shuffledQuestions = questions.sort(() => .5 - Math.random()).slice(0, 10);
     currentQuestionIndex = 0;
