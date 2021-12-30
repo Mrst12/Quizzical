@@ -110,11 +110,33 @@ as who doesn't love a good quiz.
         - To format my HTML, CSS, and Javascript code 
         
 ## Testing
+The W3C Markup Validator, W3C CSS Validator Services and jshint.com were used to validate every page of the project to ensure there were no syntax errors in the project.
+![HTML test](./assets/screenshots/quizzical-html-check.png)
+![CSS test](./assets/screenshots/quizzical-css-check.png)
+- jshint 
+    - Brought up eight warnings of missing semicolons, which were all corrected.
+    - Brought up three unused variables, which was rectified.
 
 ### Lighthouse
+- The site was tested using Lighthouse
+![Lighthouse results](./assets/screenshots/lighthouse-quizzical.png)
 ### Devices
+- The site was tested on **Chrome** and **Safari**
+- The site was tested on an iphone 7, ipad, sony Experia and my dell laptop.
 ### Testing User Stories
+1. As a user, I want to test my general knowledge.
+    - A range of 40 general knowlege questions included each game with ten
+    random questions.
+2. As a user, I want to choose from a range of answers.
+    - Four possible answers are available to choose from.
+3. As a user, I want to see my score as I progress.
+    - There is a correct and incorrect score counter at the bottom for the user to see.
+4. As a user, I want feedback from the questions.
+    - The correct answer shows green, the incorrect answers shows red.
+
 ### Known Bugs
+- slight scroll needed to see the incorrect answers at times.
+
 ### Functionality
 ## Deployment
 
