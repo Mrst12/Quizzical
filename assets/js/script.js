@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     currentQuestionIndex = 0;
     questionCont.classList.remove('hide');
     getNextQuestion();
-  };
+  }
   
   /**
    * resets and shuffles questions
