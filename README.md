@@ -74,6 +74,17 @@ as who doesn't love a good quiz.
 [Mobile wireframe](./assets/wireframes/quizzical-mobile.png)
 
 ## Features
+
+![heading image](./assets/screenshots/quizzical-heading.png)
+- consists of a logo and title of the quiz
+![question image](./assets/screenshots/quizzical-question.png)
+- each question is displayed randomly 10 questions per game 40 questions to choose from
+![answers section](./assets/screenshots/quizzical-answers.png)
+- Four answers to choose from shows green for correct and red for incorrect
+![restart image](./assets/screenshots/quizzical-restart.png)
+- Allows the user to restart at the end of a game instead of using browser refresh
+![score section](./assets/screenshots/quizzical-score.png)
+- Allows user to see their correct and incorrect score as they progress
 ## Technologies Used
 ### Languages
     - HTML
