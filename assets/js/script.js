@@ -24,14 +24,9 @@ nextButton.addEventListener('click', () => {
     getNextQuestion();
 })
 
-resultsButton.onclick = function() {
-    resultCont.style.display = "block";
-};
-
 restartButton.onclick = function() {
     restartButton.classList.add('hide');
     questionCont.classList.add('hide');
-    resultsButton.classList.add('hide');
     letsStart.classList.remove('hide');
     currentScore = 0;
     currentIncorrectScore = 0;
@@ -107,13 +102,7 @@ function defaultState() {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
-        document.getElementById('questions').innerHTML = `
-        <h2>Check out your results</h2>
-        0-5 : Good try why not refresh the page and try again!
-        <br>
-        5-10 : Fantastic job if you want to increase your knowledge refresh the page to try again!
-        `
-        restartButton.classList.remove('hide');
+        endGame();
     }
     if (correct) {
         incrementScore();
@@ -143,4 +132,14 @@ function clearStatusClass(element) {
  function incrementWrongAnswer() {
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
+}
+
+function endGame() {
+    document.getElementById('questions').innerHTML = `
+        <h2>Check out your results</h2>
+        0-5 : Good try why not refresh the page and try again!
+        <br>
+        5-10 : Fantastic job if you want to increase your knowledge refresh the page to try again!
+        `
+        restartButton.classList.remove('hide');
 }
