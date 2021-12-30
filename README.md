@@ -177,5 +177,13 @@ finished it would display the results with comments on how well the user had don
 
 ## Credits
 - [logo image](https://www.pinclipart.com/)
+
 ### Code
+-  watched this you tube video for help to get started and took some snippets from it.
+[You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k)
+
 ### Acknowledgements:
+- Code institute for course material and content
+- Everybody on the slack community for support, advice, guidance and patience.
+- My mentor for assistance and advice on planning and final submission feedback.
+- My husband and children for their patience, support and understanding.
