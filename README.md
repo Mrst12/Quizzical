@@ -8,8 +8,35 @@
 ![responsive images](./assets/design/quizzical-responsive.png)
 
 ## Introduction
+The aim of this website was to use HTML, CSS and JavaScript to create an interactive,
+front-end site, that responds to users actions. I thought that a quiz would be a great idea 
+as who doesn't love a good quiz.
 ## Contents
+- [User Experience](#user-experience-ux)
+    - [User Stories](#user-stories)
+- [Design](#design)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+    - [Images](#images)
+- [Wireframes](#wireframes)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+    - [Programmes Used](#programmes-used)
+- [Testing](#testing)
+    - [Lighthouse](#lighthouse)
+    - [Devices](#devices)
+    - [Testing User Stories](#testing-user-stories)
+    - [Known Bugs](#known-bugs)
+    - [Functionality](#functionality)
+- [Deployment](#deployment)
+    - [Forking The Repository](#forking-the-repository)
+    - [Cloning The Repository](#cloning-the-repository)
+- [Credits](#credits)
+    - [Code](#code)
+    - [Acknowledgements](#acknowledgements)
 ## User Experience (UX)
+
 - ### User Stories
     
     1. As a user, I want to test my general knowledge.
