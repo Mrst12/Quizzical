@@ -1,6 +1,12 @@
 # QUIZZICAL
 
+[view the live site here](https://mrst12.github.io/Quizzical/)
+
+[View my Github](https://github.com/Mrst12/Quizzical)
+
 ## Final Design
+![responsive images](./assets/design/quizzical-responsive.png)
+
 ## Introduction
 ## Contents
 ## User Experience (UX)
