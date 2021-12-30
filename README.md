@@ -85,6 +85,7 @@ as who doesn't love a good quiz.
 - Allows the user to restart at the end of a game instead of using browser refresh
 ![score section](./assets/screenshots/quizzical-score.png)
 - Allows user to see their correct and incorrect score as they progress
+
 ## Technologies Used
 ### Languages
     - HTML
@@ -97,8 +98,17 @@ as who doesn't love a good quiz.
         - For version control, commiting, and pushing to Github
     - Github
         - For storing the repository, files, and images pushed from Gitpod
-    
-
+    - Gitpod
+        - IDE used to code the website
+    - Chrome developer tools
+        - for checking compatibilty, troubleshooting and editing code
+    - Am I responsive
+        - Used to test responsiveness of the website at different screen sizes.
+    - Google Fonts
+        - Used for the font of the website.
+    - Freeformatter.com
+        - To format my HTML, CSS, and Javascript code 
+        
 ## Testing
 
 ### Lighthouse
