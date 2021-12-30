@@ -29,6 +29,7 @@ as who doesn't love a good quiz.
     - [Testing User Stories](#testing-user-stories)
     - [Known Bugs](#known-bugs)
     - [Functionality](#functionality)
+    - [Future features](#future-features)
 - [Deployment](#deployment)
     - [Forking The Repository](#forking-the-repository)
     - [Cloning The Repository](#cloning-the-repository)
@@ -138,10 +139,42 @@ The W3C Markup Validator, W3C CSS Validator Services and jshint.com were used to
 - slight scroll needed to see the incorrect answers at times.
 
 ### Functionality
+- All buttons have been tested and are accessible
+- All buttons have been hovered over to ensure they work
+- All images load as intended
+- The game works as I intended
+
+### Future features
+- In the future I would like to implement a score tracker so when the game was
+finished it would display the results with comments on how well the user had done.
+- In the future I would like to implement a progress bar or counter so the user knew how many questions they had answered or had left to answer.
+
 ## Deployment
 
+- The project was deployed to Github pages using the following steps:
+1. Log into Github and locate the [Github repository](https://github.com/Mrst12/Quizzical).
+2. Click on the settings icon at the top of the repository.
+3. Scroll down until you come to the Github pages section
+    - On this part it says it now has it's own dedicated tab and to click check it out click this.
+4. Where it says **source** select **main**, next to this should say root.
+5. Click save, then refresh the page.
+
 ### Forking the repository
+1. Log into the Github repository.
+2. Underneath your avatar is a button labelled **Fork**, click this.
+3. You should have your own copy now.
+
 ### Cloning the repository
+1. Log into Github and locate the repository.
+2. Under the repository name click the button labelled **code**.
+3. You will see an option to clone or download.
+4. Copy the url for cloning by clicking the clipboard icon.
+5. Launch gitpod or your own choice of directory.
+6. Open Gitbash
+7. Change the current working directory to the location you want the cloned directory to be.
+8. Type git clone and paste the Url from step 4. 
+9. Press enter to create the cloned directory.
+
 ## Credits
 - [logo image](https://www.pinclipart.com/)
 ### Code
