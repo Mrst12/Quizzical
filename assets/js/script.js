@@ -136,10 +136,9 @@ function clearStatusClass(element) {
 
 function endGame() {
     document.getElementById('questions').innerHTML = `
-        <h2>Check out your results</h2>
-        0-5 : Good try why not refresh the page and try again!
+        <strong><em>Quizzical!</em></strong>
         <br>
-        5-10 : Fantastic job if you want to increase your knowledge refresh the page to try again!
+        Click restart to retry
         `
         restartButton.classList.remove('hide');
 }
