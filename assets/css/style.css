@@ -98,16 +98,11 @@ button:hover {
 .hide {
   display: none;
 }
-/*results section*/
 
-#results-cont {
-  font-size: 1rem;
-  text-align: center;
-  display: none;
-}
+/*navigation buttons*/
 
-#result-text ul {
-  list-style: none;
+#start-btn, #next-btn, #restart-btn {
+  width: 50%;
 }
 
 /*media queries*/
