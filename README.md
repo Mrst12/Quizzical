@@ -177,6 +177,8 @@ finished it would display the results with comments on how well the user had don
 
 ## Credits
 - [logo image](https://www.pinclipart.com/)
+- Who wants to be a millionaire - bumper quiz book
+    - used to generate the questions and answers
 
 ### Code
 -  watched this you tube video for help to get started and took some snippets from it.
