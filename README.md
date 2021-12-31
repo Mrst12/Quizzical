@@ -27,6 +27,7 @@ as who doesn't love a good quiz.
     - [Lighthouse](#lighthouse)
     - [Devices](#devices)
     - [Testing User Stories](#testing-user-stories)
+    - [Fixed Bugs](#fixed-bugs)
     - [Known Bugs](#known-bugs)
     - [Functionality](#functionality)
     - [Future features](#future-features)
@@ -134,6 +135,11 @@ The W3C Markup Validator, W3C CSS Validator Services and jshint.com were used to
     - There is a correct and incorrect score counter at the bottom for the user to see.
 4. As a user, I want feedback from the questions.
     - The correct answer shows green, the incorrect answers shows red.
+
+### Fixed Bugs
+    - When the quiz was due to restart, I noticed that the users were not noticing that the next button had changed to a restart button, so implemented a flashing restart button to alert the user to its difference allowing them to then check their scores before replaying, and resetting the scores back to zero.
+
+    - There was a big scroll especially on mobile devices needed when the scores were at the top of the screen, so I moved them to the bottom, therefore reducing the amount of scrolling needed by the user, making it more user friendly.
 
 ### Known Bugs
 - slight scroll needed to see the incorrect answers at times.
